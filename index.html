@@ -17,7 +17,7 @@
     a:hover{text-decoration:underline}
     .container{max-width:860px;margin:0 auto;padding:24px}
     header{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center;margin:8px 0 16px}
-    .avatar{width:200px;height:200px;border-radius:18px;object-fit:cover;background:var(--card)}
+    .avatar{width:200px;height:auto;border-radius:18px;object-fit:cover;background:var(--card)}
     h1{margin:0 0 4px;font-size:32px}
     .subtitle{margin:0;color:var(--muted)}
     nav{margin:8px 0 20px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
@@ -33,13 +33,13 @@
     .muted{color:var(--muted)}
     .mono{font-family:ui-monospace,Menlo,Consolas,monospace}
     footer{margin:28px 0 8px;color:var(--muted);font-size:.95rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    @media(max-width:720px){header{grid-template-columns:1fr}.avatar{width:160px;height:160px;justify-self:start}}
+    @media(max-width:720px){header{grid-template-columns:1fr}.avatar{width:160px;height:auto;justify-self:start}}
   </style>
 </head>
 <body>
   <div class="container">
 <header>
-  <img class="avatar" src="avatar.jpg" alt="Portrait" width="200" height="200" />
+  <img class="avatar" src="avatar.jpg" alt="Portrait" width="200" height=auto />
   <div>
     <h1>Jiarong Jin (金佳绒)</h1>
     <p class="subtitle">PhD Student · Department of Computer Science, Shanghai Jiao Tong University</p>
