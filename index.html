@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiarong Jin(金佳绒) — Homepage</title>
+  <meta name="description" content=" PhD student in computer science at Shanghai Jiao Tong University." />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg:#fff;--fg:#0b1220;--muted:#606b7a;--accent:#2b6ef4;--border:#e6e8ef;--card:#f6f7fb
+    }
+    @media(prefers-color-scheme:dark){:root{--bg:#0b1220;--fg:#e7ecf5;--muted:#a0a7b7;--accent:#6aa3ff;--border:#1e2a44;--card:#121a2c}}
+    *,*:before,*:after{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica Neue,Arial;line-height:1.6;background:var(--bg);color:var(--fg)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:860px;margin:0 auto;padding:24px}
+    header{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center;margin:8px 0 16px}
+    .avatar{width:200px;height:200px;border-radius:18px;object-fit:cover;background:var(--card)}
+    h1{margin:0 0 4px;font-size:32px}
+    .subtitle{margin:0;color:var(--muted)}
+    nav{margin:8px 0 20px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:10px 0;flex-wrap:wrap}
+    nav a{padding:4px 10px;border-radius:8px}
+    nav a:hover{background:var(--card);text-decoration:none}
+    section{margin:22px 0}
+    section>h2{margin:0 0 10px;font-size:20px}
+    .list{list-style:none;margin:0;padding:0}
+    .list li{padding:8px 10px;border:1px solid var(--border);border-radius:10px;margin:8px 0;background:var(--card)}
+    .pubs{list-style:none;margin:0;padding:0}
+    .pubs li{padding:10px 12px;border-left:3px solid var(--border);margin:10px 0;background:var(--card);border-radius:10px}
+    .muted{color:var(--muted)}
+    .mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+    footer{margin:28px 0 8px;color:var(--muted);font-size:.95rem;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    @media(max-width:720px){header{grid-template-columns:1fr}.avatar{width:160px;height:160px;justify-self:start}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="avatar" src="avatar.jpg" alt="Portrait of Jiarong Jin" />
+      <div>
+        <h1>      <img class="avatar" src="avatar.jpg" alt="Portrait of Jiarong Jin" /></h1>
+        <p class="subtitle">PhD Student · Department of Computer Science, Shanghai Jiao Tong University</p>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a PhD student majoring in computer science at Shanghai Jiao Tong University, advised by <a href="https://jhc.sjtu.edu.cn/~bstao/">Biaoshuai Tao</a>. I earned my B.S. in information security from Shanghai Jiao Tong University. My research interests lie in algorithmic game theory, particularly in areas such as fair division and computational social choice. </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="list">
+        <li><strong>PhD</strong>, Computer Science — Shanghai Jiao Tong University (<span class="muted">2023.9 –Present</span>)</li>
+        <li><strong>Bachelor</strong>, Information Security — INSTITUTION (<span class="muted">2019.6 - 2023.6</span>)</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul class="pubs">
+        <li>
+          <strong>On Pareto‑Optimal and Fair Allocations with Personalized Bi‑Valued Utilities</strong> (2025). Jiarong Jin, Biaoshuai Tao <em>WINE 2025</em>. [<a href="https://arxiv.org/abs/2507.18251">arxiv version</a>]
+        </li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul class="list">
+        <li><strong>Teaching Assistant</strong>, <em>Design and Analysis of Algorithms (AI2615)</em> — SJTU, Fall&Spring 2025, Fall 2024, Fall 2023</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="mono">jinjiarong@sjtu.edu.cn</p>
+      <p>
+        <a href="mailto:jinjiarong@sjtu.edu.cn">Email</a> ·
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a> ·
+        <a href="https://github.com/TinaJin0228" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Jiarong Jin</span>
+      <a href="#about">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
